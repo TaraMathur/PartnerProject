@@ -2,6 +2,7 @@ var chartData1 = [];
 var chartData2 = [];
 var chartData3 = [];
 var chartData4 = [];
+var chartData5 = [];
 
 generateChartData();
 
@@ -26,6 +27,9 @@ function generateChartData() {
     var a4 = Math.round( Math.random() * ( 100 + i ) ) + 200 + i;
     var b4 = Math.round( Math.random() * ( 100 + i ) ) + 600 + i;
 
+    var a5 = Math.round( Math.random() * ( 100 + i ) ) + 200 + i + 20;
+    var b5 = Math.round( Math.random() * ( 100 + i ) ) + 600 + i + 20;
+
     chartData1.push( {
       "date": newDate,
       "value": a1,
@@ -46,6 +50,12 @@ function generateChartData() {
       "value": a4,
       "volume": b4
     } );
+    chartData5.push( {
+      "date": newDate,
+      "value": a5,
+      "volume": b5
+    } );
+
   }
 }
 
@@ -64,7 +74,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
       "dataProvider": chartData1,
       "categoryField": "date"
     }, {
-      "title": "Verizon",
+      "title": "ESPN",
       "fieldMappings": [ {
         "fromField": "value",
         "toField": "value"
@@ -75,7 +85,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
       "dataProvider": chartData2,
       "categoryField": "date"
     }, {
-      "title": "Dunkin Donuts",
+      "title": "NFL",
       "fieldMappings": [ {
         "fromField": "value",
         "toField": "value"
@@ -86,7 +96,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
       "dataProvider": chartData3,
       "categoryField": "date"
     }, {
-      "title": "NFL",
+      "title": "Heinken",
       "fieldMappings": [ {
         "fromField": "value",
         "toField": "value"
@@ -96,12 +106,23 @@ var chart = AmCharts.makeChart( "chartdiv", {
       } ],
       "dataProvider": chartData4,
       "categoryField": "date"
+    }, {
+      "title": "Verizon",
+      "fieldMappings": [ {
+        "fromField": "value",
+        "toField": "value"
+      }, {
+        "fromField": "volume",
+        "toField": "volume"
+      } ],
+      "dataProvider": chartData5,
+      "categoryField": "date"
     }
   ],
 
   "panels": [ {
     "showCategoryAxis": false,
-    "title": "Value",
+    "title": "Prominence",
     "percentHeight": 70,
     "stockGraphs": [ {
       "id": "g1",
@@ -115,19 +136,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
       "periodValueTextComparing": "[[percents.value.close]]%",
       "periodValueTextRegular": "[[value.close]]"
     }
-  }, /*{
-    "title": "Volume",
-    "percentHeight": 30,
-    "stockGraphs": [ {
-      "valueField": "volume",
-      "type": "column",
-      "showBalloon": false,
-      "fillAlphas": 1
-    } ],
-    "stockLegend": {
-      "periodValueTextRegular": "[[value.close]]"
-    } 
-  } */],
+  },],
 
   "chartScrollbarSettings": {
     "graph": "g1"
@@ -142,31 +151,10 @@ var chart = AmCharts.makeChart( "chartdiv", {
     "valueLineAlpha": 0.5
   },
 
-/*  "periodSelector": {
-    "position": "left",
-    "periods": [ {
-      "period": "MM",
-      "selected": true,
-      "count": 1,
-      "label": "1 month"
-    }, {
-      "period": "YYYY",
-      "count": 1,
-      "label": "1 year"
-    }, {
-      "period": "YTD",
-      "label": "YTD"
-    }, {
-      "period": "MAX",
-      "label": "MAX"
-    } ]
-  }, */
-
   "dataSetSelector": {
     "position": "left"
   },
-
   "export": {
-    "enabled": true
+    "enabled": false
   }
 } );

@@ -17,7 +17,7 @@ th {
   margin-top:20px;
   margin-left:50px;
   height:900px;
-    width:800px;
+  width:1000px;
   background-color:#EBEFF2;
 }
 
@@ -29,11 +29,11 @@ th {
 
 .vid-stats{
   position:absolute;
-  margin-top:30px;
-  margin-left:-60px;
+  margin-top:28px;
+  margin-left:25px;
   margin-right:20px;  
-  height:300px;
-  width:400px;
+  height:304px;
+  width:450px;
   left: 500px;
   top: 0px; 
   border-color:grey;
@@ -50,6 +50,8 @@ table {
 
 #chartdiv {
   position:absolute;
- margin-top:350px;
+  margin-top:350px;
   margin-right:20px;
+  padding-left:20px;
+  padding-right:20px;
 }
