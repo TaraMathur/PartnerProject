@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Netra Video</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+	<script type="text/javascript" src="http://cdn.popcornjs.org/code/dist/popcorn-complete.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+	<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+	<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+	<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+	<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+	<script type="text/javascript" src="js/amCharts_Tara.js"></script>
+
+
+</head>
+
+<body>
+    <!-- Start your project here-->
+    <div class="vid-container">
+        <div class="video"> <!--style="position: fixed; left:50%; width:300px;"> -->
+            <video width="450" height="281" controls>
+                <source src ="http://nfl_imgs-2cef9580.s3.amazonaws.com/nfl_vid_part1.mp4" type = "video/mp4" />
+            </video>
+        </div>
+        <div class="chart-container">
+	        <div id="chartdiv"></div>	
+	        <div id="chartdiv2"></div>	
+	        <div id="chartdiv3"></div>	
+	        <div id="chartdiv4"></div>	
+	        <div id="chartdiv5"></div>	
+	    </div>
+     <div class="vid-stats">
+            <table class="table">
+            <thead>
+            <tr>
+              <th></th>
+              <th>Prominence</th>
+              <th>Size</th>
+            </tr>
+            </thead>
+              <tbody>
+                 <tr>
+                  <th scope="row">GMC</th>
+                  <td>10</td>
+                  <td>10%</td>
+                </tr>           
+                <tr>
+                  <th scope="row">ESPN</th>
+                  <td>8</td>
+                  <td>11%</td>
+                </tr>
+                <tr>
+                  <th scope="row">NFL</th>
+                  <td>5</td>
+                  <td>9%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Heineken</th>
+                  <td>5</td>
+                  <td>9%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Verizon</th>
+                  <td>5</td>
+                  <td>9%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Verizon</th>
+                  <td>5</td>
+                  <td>9%</td>
+                </tr>
+            </tbody>
+            </table>
+   		</div>
+	 </div>
+
+
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/smoothie.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/piechart.js"></script>
+    <script type="text/javascript" src="js/smoothiechart.js"></script>
+</body>
+
+</html>
