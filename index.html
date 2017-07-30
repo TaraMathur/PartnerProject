@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+</style>
+
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,16 +22,24 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="amCharts/netra_style.css" rel="stylesheet">
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+    <script src="https://www.amcharts.com/lib/3/amstock.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <script src="chart.js"></script>
+
 </head>
 
 <body>
     <!-- Start your project here-->
     <div class="vid-container">
         <div class="vid">
-        <video>
-                <iframe width="400" height="300" src="http://nfl_imgs-2cef9580.s3.amazonaws.com/nfl_vid_part1.mp4" frameborder="0" allowfullscreen></iframe>
-        </video>
+          <video>
+                  <iframe width="400" height="300" src="http://nfl_imgs-2cef9580.s3.amazonaws.com/nfl_vid_part1.mp4" frameborder="0" allowfullscreen></iframe>
+          </video>
         </div>
         <div class="vid-stats">
             <table class="table">
@@ -75,45 +91,10 @@
             </tbody>
             </table>
    </div>
-
+ <div id="chartdiv"></div>
+   
    
 
-</div>    
-
-<div class="smoothie-chart-container">
-    <canvas id="mycanvas" width="860" height="100"></canvas>
-</div>
-
- <div class="pie-chart-container">
-        <div class="one">
-            <div style="height: 10vh">
-                <div class="flex-center flex-column">
-                    <h1 class="animated fadeIn mb-2">Prominence</h1>
-                </div>
-            </div>
-            <canvas id="myChart"></canvas>
-            <div id="legendDiv"></div>
-        </div>
-        <div class="two">
-            <div style="height: 10vh">
-                <div class="flex-center flex-column">
-                    <h1 class="animated fadeIn mb-2">Time</h1>
-                </div>
-            </div>
-            <canvas id="myChart2"></canvas>
-            <div id="legendDiv2"></div>
-        </div>
-        <div class="three">
-            <div style="height: 10vh">
-                <div class="flex-center flex-column">
-                    <h1 class="animated fadeIn mb-2">Size</h1>
-                </div>
-            </div>
-            <canvas id="myChart3"></canvas>
-            <div id="legendDiv3"></div>
-        </div>
-
-    </div>
     <!-- /Start your project here-->
 
     <!-- SCRIPTS -->
@@ -124,10 +105,7 @@
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/smoothie.js"></script>
     <script type="text/javascript" src="js/mdb.min.js"></script>
-    <script type="text/javascript" src="js/piechart.js"></script>
-    <script type="text/javascript" src="js/smoothiechart.js"></script>
 </body>
 
 </html>

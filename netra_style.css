@@ -1,0 +1,55 @@
+/* YOUR CUSTOM STYLES */
+
+
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-style:bold;
+  font-size:16px;
+}
+
+th {
+  text-align:center;
+}
+
+.vid-container{
+  position:relative;
+  margin-top:20px;
+  margin-left:50px;
+  height:900px;
+    width:800px;
+  background-color:#EBEFF2;
+}
+
+.vid{
+  position:absolute;
+  margin-top:30px;
+  margin-left:20px; 
+}
+
+.vid-stats{
+  position:absolute;
+  margin-top:30px;
+  margin-left:-60px;
+  margin-right:20px;  
+  height:300px;
+  width:400px;
+  left: 500px;
+  top: 0px; 
+  border-color:grey;
+  font-family: 'Roboto', sans-serif;
+  font-size:14px;
+  text-align:center;
+  background-color:white;
+  overflow:auto;
+}
+
+table {
+  overflow:auto;
+}
+
+#chartdiv {
+  position:absolute;
+ margin-top:350px;
+  margin-right:20px;
+}
